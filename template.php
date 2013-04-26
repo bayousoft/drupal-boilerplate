@@ -78,6 +78,7 @@ drupal_add_js('jQuery(document).ready(function($) {
       $(".nav-container").toggle();
     });
 
+
 });',
 array('type' => 'inline', 'scope' => 'header'));
 //EOF:Javascript
