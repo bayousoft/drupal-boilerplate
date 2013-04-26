@@ -2,8 +2,20 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="navigation-container">
-            <nav>
+        <div class="header-container clearfix">
+            <header class="wrapper clearfix">
+                
+                <?php if ($logo): ?>
+                    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                    </a>
+                <?php endif; ?>
+        
+                <?php if ($page['header']) : ?>
+                    <?php print drupal_render($page['header']); ?>
+                <?php endif; ?>
+             
+                <nav>
                 
                 <?php 
 				if (module_exists('i18n_menu')) {
@@ -17,20 +29,6 @@
                 </div>
             
             </nav>
-        </div>
-
-        <div class="header-container clearfix">
-            <header class="wrapper clearfix">
-                
-                <?php if ($logo): ?>
-                    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-                    </a>
-                <?php endif; ?>
-        
-                <?php if ($page['header']) : ?>
-                    <?php print drupal_render($page['header']); ?>
-                <?php endif; ?>
                 
             </header>
         </div>

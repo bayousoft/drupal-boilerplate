@@ -222,7 +222,20 @@ nav a:hover {
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
     }
-
+    
+    #first-sidebar {
+        width:25%;
+        float:left
+    }
+    .one-sidebar article {
+        width:60%;
+        padding-left:5%;
+        float:left;
+    }
+    .one-sidebar article .section {
+        
+    }    
+    
 /* ============
     WIDE: Menu
    ============ */
