@@ -1,0 +1,31 @@
+name = Boilerplate
+description = Boilerplate is a minimal Drupal starter theme based on HTML5 Boilerplate (www.html5boilerplate.com).
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/normalize.min.css
+stylesheets[all][] = css/main.css
+
+regions[top] = Top
+
+regions[navigation] = Navigation
+
+regions[header] = Header
+
+regions[slideshow] = Slideshow
+
+regions[above_content] = Above content
+
+regions[content] = Content
+
+regions[below_content] = Below content
+
+regions[sidebar_first] = Sidebar first
+
+regions[sidebar_second] = Sidebar second
+
+regions[footer] = Footer
+
+regions[bottom] = Bottom
+
+regions[help] = Help
