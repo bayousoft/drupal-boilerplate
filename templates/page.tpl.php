@@ -15,7 +15,7 @@
                     <?php print drupal_render($page['header']); ?>
                 <?php endif; ?>
              
-                <nav>
+                
                 
                 <?php 
 				if (module_exists('i18n_menu')) {
@@ -24,11 +24,11 @@
 				    $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu')); 
 				} ?>
 				
-                <div class="content">
-				    <?php print drupal_render($main_menu_tree); ?>
-                </div>
-            
-            </nav>
+                <nav>
+                    <div class="content">
+                        <?php print drupal_render($main_menu_tree); ?>
+                    </div>
+                </nav>
                 
             </header>
         </div>
