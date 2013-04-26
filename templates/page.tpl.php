@@ -1,21 +1,17 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
+        <div id="mobile-menu-toggle"></div>
         <div class="header-container clearfix">
             <header class="wrapper clearfix">
                 
                 <?php if ($logo): ?>
+                    <div class="logo-container">
                     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
                     <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
                     </a>
+                    </div>
                 <?php endif; ?>
-        
-                <?php if ($page['header']) : ?>
-                    <?php print drupal_render($page['header']); ?>
-                <?php endif; ?>
-             
-                
                 
                 <?php 
 				if (module_exists('i18n_menu')) {
@@ -24,18 +20,30 @@
 				    $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu')); 
 				} ?>
 				
-                <nav>
-                    <div class="content">
-                        <?php print drupal_render($main_menu_tree); ?>
-                    </div>
-                </nav>
+                <div class="nav-container">
+                    <nav>
+                        <div class="content">
+                            <?php print drupal_render($main_menu_tree); ?>
+                        </div>
+                    </nav>             
+                </div>        
+                
+                <?php if ($page['header']) : ?>
+                    <?php print drupal_render($page['header']); ?>
+                <?php endif; ?>
                 
             </header>
         </div>
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-
+                
+                <?php if ($page['slideshow']) : ?>
+                    <div id="slideshow">
+                        <?php print drupal_render($page['slideshow']); ?>                    
+                    </div>
+                <?php endif; ?>
+                
                 <?php if ($messages): ?>
                     <div id="messages">
                       <?php print $messages; ?>
@@ -99,8 +107,6 @@
                 </footer>
             </div>
         <?php endif; ?>
-
-        <script src="js/main.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

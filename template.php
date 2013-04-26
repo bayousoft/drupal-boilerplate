@@ -72,15 +72,12 @@ function boilerplate_breadcrumb($variables) {
  */
 //drupal_add_js(drupal_get_path('theme', 'boilerplate') .'/vendor/js/jquery.mobilemenu.js');
 
-//drupal_add_js('jQuery(document).ready(function($) { 
+drupal_add_js('jQuery(document).ready(function($) { 
 
-//$("nav > ul").mobileMenu({
-//	prependTo: "#navigation",
-//	combine: false,
-//	switchWidth: 768,
-//	topOptionText: "Select page"
-//});
+    $("#mobile-menu-toggle").click(function(){
+      $(".nav-container").toggle();
+    });
 
-//});',
-//array('type' => 'inline', 'scope' => 'header'));
+});',
+array('type' => 'inline', 'scope' => 'header'));
 //EOF:Javascript
