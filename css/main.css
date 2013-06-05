@@ -25,6 +25,10 @@ body {
     text-shadow: none;
 }
 
+* { 
+    box-sizing: border-box; 
+}
+
 hr {
     display: block;
     height: 1px;
