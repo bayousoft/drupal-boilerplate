@@ -29,6 +29,10 @@ body {
     box-sizing: border-box; 
 }
 
+#admin-toolbar .admin-tabs, #admin-toolbar .admin-tab, #admin-toolbar li, #admin-toolbar a {
+	  box-sizing: content-box !important; 
+}
+
 hr {
     display: block;
     height: 1px;
