@@ -2,6 +2,8 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
+@import url(http://fonts.googleapis.com/css?family=Vidaloka);
+
 html,
 button,
 input,
@@ -77,12 +79,11 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: Theme
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
-    padding-top: 50px;
+
 }
 
 .logo-container {
@@ -91,18 +92,18 @@ body {
 
 .nav-container {
     clear:both;
-    display:none;
+
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+  
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+
 }
 
 .title {
@@ -138,13 +139,11 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #e44d26;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+ 
 }
 
 nav a:hover {
@@ -164,12 +163,11 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    
     padding: 0px 5% 10px;
 }
 
 .footer-container footer {
-    color: white;
     padding: 20px 0;
     text-align:center
 }
@@ -279,9 +277,7 @@ nav a:hover {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+
     }
     
     #first-sidebar {
