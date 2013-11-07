@@ -12,18 +12,22 @@
                     </a>
                     </div>
                 <?php endif; ?>
-                
-                <?php 
-				if (module_exists('i18n_menu')) {
-				    $main_menu_tree = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
-				} else { 
-				    $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu')); 
-				} ?>
 				
                 <div class="nav-container">
                     <nav>
                         <div class="content">
-                            <?php print drupal_render($main_menu_tree); ?>
+		        <?php print theme('links__system_main_menu', array(
+		          'links' => $main_menu,
+		          'attributes' => array(
+		            'id' => 'main-menu-links',
+		            'class' => array('links', 'clearfix'),
+		          ),
+		          'heading' => array(
+		            'text' => t('Main menu'),
+		            'level' => 'h2',
+		            'class' => array('element-invisible'),
+		          ),
+		        )); ?>
                         </div>
                     </nav>             
                 </div>        
