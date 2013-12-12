@@ -28,7 +28,7 @@ body {
 }
 
 * { 
-    box-sizing: border-box; 
+    /* box-sizing: border-box; */
 }
 
 #admin-toolbar .admin-tabs, #admin-toolbar .admin-tab, #admin-toolbar li, #admin-toolbar a {
