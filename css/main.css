@@ -17,6 +17,18 @@ body {
     line-height: 1.4;
 }
 
+a {
+  color: rgb(0,0,0);
+  text-decoration:none; 
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+a:hover {
+    color: rgb(100,100,100)
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
