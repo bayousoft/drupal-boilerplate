@@ -7,7 +7,6 @@ stylesheets[all][] = css/normalize.min.css
 stylesheets[all][] = css/formalize.css
 stylesheets[all][] = css/main.css
 
-scripts[] = js/vendor/jquery.formalize.min.js
 scripts[] = js/main.js
 
 regions[top] = Top
